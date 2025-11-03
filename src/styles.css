@@ -1,0 +1,493 @@
+@import url('https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400..700&family=TikTok+Sans:opsz,wght@12..36,300..900&display=swap');
+
+:root{
+    --color-primario: #e3bcd5;
+    --color-secundario: #fff;
+    --color-terciario: #000;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: "Markazi Text", serif;
+}
+
+.header {
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: var(--color-secundario);
+    box-shadow: 5px 5px 5px var(--color-terciario);
+}
+
+.navegacion ul {
+    display: flex;
+    margin-right: 50px;
+    gap: 20px;
+    list-style: none;
+    margin-top: 25px;
+}
+
+.navegacion a{
+    text-decoration: none;
+    color: var(--color-terciario);
+}
+
+.navegacion li{
+    font-size: 22px;
+    transition: transform 0.3s ease;
+}
+
+.navegacion li:hover{
+    transform: scale(1.2);
+}
+
+.logo_header{
+    height: 80px;
+    width: 80px;
+    cursor: pointer;
+}
+
+.quienes-somos{
+    padding-top: 20px;
+    background-color: var(--color-primario);
+    height: 750px;
+}
+
+.quienes-somos h2{
+    text-align: center;
+    font-size: 48px;
+}
+
+.quienes-somos-container{
+    display: flex;
+}
+
+.quienes-somos-container{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.quienes-somos-container img{
+    width: 490px;
+    height: 489px;
+    border-radius: 50%;
+    display: flex;
+    margin-left: 45px;
+}
+
+.descripcion{
+    width: 847px;
+    text-align: start;
+    font-size: 38px;
+}
+
+.ubicacion{
+    padding-top: 20px;
+    text-align: center;
+}
+
+.ubicacion h3{
+    font-size: 48px;
+}
+
+.ubicacion h4{
+    font-size: 24px;
+}
+
+.mapa{
+    width: 944px;
+    height: 617px;
+}
+
+.servicios{
+    margin-top: 25px;
+}
+
+.servicios h3{
+    text-align: center;
+    align-items: center;
+    margin-bottom: 25px;
+    font-size: 48px;
+}
+
+.card-container{
+    padding-top: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: space-around;
+}
+
+.card{
+    height: 590px;
+    width: 503px;
+    background-color: var(--color-primario);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 25px;
+}
+
+.card p{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.card-img{
+    height: 481.33px;
+    width: 361px;
+    border-radius: 200px;
+}
+
+.contacto-title h3{
+    align-items: center;
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 48px;
+}
+
+.form-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: var(--color-primario);
+    height: 600px;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-input{
+    height: 35px;
+    width: 650px;
+    border-radius: 10px;
+    border: none;
+}
+
+#textarea{
+    height: 150px;
+    width: 650px;
+    resize: none;
+    border: none;
+    border-radius: 10px;
+}
+
+#submit{
+    height: 35px;
+    width: 650px;
+    background-color: #6d8be3;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    transition: transform 0.3s ease;
+}
+
+#submit:hover{
+    transform: scale(1.2);
+}
+
+.container{
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    justify-content: space-around;
+    padding: 50px 0 50px 0;
+}
+
+
+.social-container{
+    gap: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.social-container h4{
+    font-size: 30px;
+}
+
+.social{
+    display: flex;
+    width: 500px;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    padding: 5px;
+    text-decoration: none;
+    color: var(--color-terciario);
+    transition: transform 0.3s ease;
+}
+
+.social:hover{
+    transform: scale(1.2);
+}
+
+.social p{
+    font-size: 25px;
+}
+
+.facebook{
+    background-color: #3b5998;
+    font-size: 20px;
+    border-radius: 25px;
+}
+
+.instagram{
+    background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af, #515bd4);
+    border-radius: 25px;
+    font-size: 20px;
+}
+
+.social img{
+    width: 50px;
+    height: 50px;
+}
+
+
+footer{
+    align-items: center;
+    text-align: center;
+}
+
+
+.company{
+    font-size: 36px;
+}
+
+.descripcion,
+.quienes-somos-container img {
+    opacity: 0;
+    transform: translateX(0);
+    transition: all 1s ease-out;
+}
+
+.slide-in-left {
+    opacity: 1;
+    animation: slideLeft 1s ease forwards;
+}
+
+.slide-in-right {
+    opacity: 1;
+    animation: slideRight 1s ease forwards;
+}
+
+@keyframes slideLeft {
+    from {
+        transform: translateX(-120px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideRight {
+    from {
+        transform: translateX(120px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* === Adaptación para Tablets (601px - 1024px) === */
+@media (max-width: 1024px) and (min-width: 601px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navegacion ul {
+        margin: 10px 0;
+        gap: 15px;
+    }
+
+    .quienes-somos {
+        height: auto;
+        padding: 40px 20px;
+    }
+
+    .quienes-somos-container {
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .descripcion {
+        width: 90%;
+        font-size: 28px;
+    }
+
+    .quienes-somos-container img {
+        width: 350px;
+        height: 350px;
+        margin-left: 0;
+    }
+
+    .mapa {
+        width: 90%;
+        height: 400px;
+    }
+
+    .card {
+        width: 350px;
+        height: auto;
+        padding-bottom: 20px;
+    }
+
+    .form-container {
+        height: auto;
+        padding: 40px 0;
+    }
+
+    .form-input,
+    #textarea,
+    #submit {
+        width: 90%;
+    }
+
+    .container {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .social {
+        width: 80%;
+    }
+}
+
+/* === Adaptación para Móviles (hasta 600px) === */
+@media (max-width: 600px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .logo_header {
+        width: 60px;
+        height: 60px;
+    }
+
+    .navegacion ul {
+        flex-direction: column;
+        gap: 10px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .navegacion li {
+        font-size: 18px;
+    }
+
+    .quienes-somos {
+        height: auto;
+        padding: 20px;
+    }
+
+    .quienes-somos-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .descripcion {
+        width: 100%;
+        font-size: 22px;
+    }
+
+    .quienes-somos-container img {
+        width: 250px;
+        height: 250px;
+        margin-left: 0;
+    }
+
+    .ubicacion h3 {
+        font-size: 36px;
+    }
+
+    .ubicacion h4 {
+        font-size: 18px;
+    }
+
+    .mapa {
+        width: 100%;
+        height: 300px;
+    }
+
+    .servicios h3 {
+        font-size: 36px;
+    }
+
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+        height: auto;
+    }
+
+    .card p {
+        font-size: 18px;
+    }
+
+    .contacto-title h3 {
+        font-size: 36px;
+    }
+
+    .form-container {
+        height: auto;
+        padding: 30px 0;
+    }
+
+    .form-input,
+    #textarea,
+    #submit {
+        width: 90%;
+        font-size: 18px;
+    }
+
+    .container {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .social-container h4 {
+        font-size: 24px;
+    }
+
+    .social {
+        flex-direction: column;
+        width: 90%;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .social img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .social p {
+        font-size: 18px;
+    }
+
+    footer .company {
+        font-size: 24px;
+    }
+}
