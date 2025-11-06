@@ -241,12 +241,21 @@ body{
     background-color: #3b5998;
     font-size: 20px;
     border-radius: 25px;
+    color: white;
 }
 
 .instagram{
     background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af, #515bd4);
     border-radius: 25px;
     font-size: 20px;
+    color: white;
+}
+
+.whatsapp{
+    background-color: #25D366;
+    border-radius: 25px;
+    font-size: 20px;
+    color: white;
 }
 
 .social img{
