@@ -15,11 +15,18 @@ body{
 .header {
     position: sticky;
     top: 0;
+    z-index: 1000;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     background-color: var(--color-secundario);
-    box-shadow: 5px 5px 5px var(--color-terciario);
+    box-shadow: 0px 4px 10px var(--color-terciario);
+    padding: 10px 30px;
+}
+
+.hero-title{
+    text-align: center;
+    margin: 24px;
 }
 
 .navegacion ul {
@@ -173,7 +180,7 @@ body{
     border: none;
 }
 
-#textarea{
+#mensaje{
     height: 150px;
     width: 650px;
     resize: none;
@@ -276,7 +283,6 @@ footer{
 
 .descripcion,
 .quienes-somos-container img {
-    opacity: 0;
     transform: translateX(0);
     transition: all 1s ease-out;
 }
@@ -290,6 +296,20 @@ footer{
     opacity: 1;
     animation: slideRight 1s ease forwards;
 }
+
+.exito{
+    color: green;
+    text-align: center;
+    font-size: 24px;
+}
+
+.error{
+    color: red;
+    text-align: center;
+    font-size: 24px;
+}
+
+
 
 @keyframes slideLeft {
     from {
@@ -313,7 +333,7 @@ footer{
     }
 }
 
-/* === Adaptación para Tablets (601px - 1024px) === */
+
 @media (max-width: 1024px) and (min-width: 601px) {
     .header {
         flex-direction: column;
@@ -364,7 +384,7 @@ footer{
     }
 
     .form-input,
-    #textarea,
+    #mensaje,
     #submit {
         width: 90%;
     }
@@ -379,7 +399,7 @@ footer{
     }
 }
 
-/* === Adaptación para Móviles (hasta 600px) === */
+
 @media (max-width: 600px) {
     .header {
         flex-direction: column;
@@ -465,7 +485,7 @@ footer{
     }
 
     .form-input,
-    #textarea,
+    #mensaje,
     #submit {
         width: 90%;
         font-size: 18px;

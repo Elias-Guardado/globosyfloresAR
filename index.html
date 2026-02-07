@@ -1,12 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="google-site-verification" content="zNEcQFD7LjScxtb1c-aFHQz8vXqYzq-aodI3uwhv6nY" />
     <title>globosyfloresAR</title>
+    <meta name="description"
+        content="Globosyflores AR ofrece decoración personalizada para eventos, arreglos florales, globos y alquiler de mobiliario. Transformamos tus celebraciones en momentos únicos.">
+    <meta name="google-site-verification" content="zNEcQFD7LjScxtb1c-aFHQz8vXqYzq-aodI3uwhv6nY" />
+    <title>Globosyflores AR | Decoración de eventos, flores y globos</title>
     <link rel="stylesheet" href="./src/styles.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <script type="text/javascript">
+        emailjs.init('R8puzEbVSnHoULote')
+    </script>
     <!-- <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin=""> -->
 
 
@@ -24,6 +33,7 @@
             </ul>
         </nav>
     </header>
+    <h1 class="hero-title">Decoración de eventos con globos y flores en Chalatenango</h1>
     <section class="quienes-somos" id="quienes-somos">
         <h2>Quiénes somos</h2>
         <div class="quienes-somos-container">
@@ -46,8 +56,9 @@
     <section class="ubicacion" id="ubicacion">
         <h3>Donde nos ubicamos</h3>
         <h4>La ubicacion presentada solo repesenta el area de trabajo no la ubicación real</h4>
-        <iframe class="mapa" width="100%" height="450" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
-            src="https://www.openstreetmap.org/export/embed.html?bbox=-89.0483%2C13.9619%2C-88.8283%2C14.1219&amp;layer=mapnik&amp;marker=14.041524%2C-88.938316">
+        <iframe class="mapa"
+            src="https://www.openstreetmap.org/export/embed.html?bbox=-88.97%2C14.02%2C-88.91%2C14.07&layer=mapnik&marker=14.041524%2C-88.938316"
+            width="100%" height="450" frameborder="0" scrolling="no">
         </iframe>
         <br />
     </section>
@@ -83,12 +94,17 @@
     <section class="form-container" id="Contacto">
 
         <div class="container">
-            <form class="form" action="https://getform.io/f/akkpqnxa" method="POST">
-                <input class="form-input" type="email" placeholder="Email" required>
-                <input class="form-input" type="text" placeholder="Nombre" required>
-                <input class="form-input" type="text" placeholder="Asunto">
-                <textarea name="textarea" id="textarea" placeholder="Aquí puedes escribir tu mensaje"></textarea>
-                <button id="submit">Enviar</button>
+            <form class="form" id="form">
+                <input name="email" id="email" class="form-input" type="email" placeholder="Email">
+                <input name="name" id="name" class="form-input" type="text" placeholder="Nombre">
+                <input name="title" id="asunto" class="form-input" type="text" placeholder="Asunto">
+                <textarea name="message" id="mensaje" placeholder="Aquí puedes escribir tu mensaje"></textarea>
+                <button type="submit" id="submit">Enviar</button>
+                <div id="resultado-alerta" class="alerta" style="
+                text-align: center;
+                ">
+
+                </div>
             </form>
             <!-- <div class="social-container">
                 <h4>Tambien puedes contactarnos en nuestras redes</h4>
@@ -104,7 +120,8 @@
             <div class="social-container">
                 <h4>También puedes contactarnos en nuestras redes</h4>
 
-                <a href="https://www.facebook.com/profile.php?id=61570746931526" target="_blank" class="social facebook">
+                <a href="https://www.facebook.com/profile.php?id=61570746931526" target="_blank"
+                    class="social facebook">
                     <img src="/src/img/face.jpeg" alt="Facebook">
                     <p>Facebook</p>
                 </a>

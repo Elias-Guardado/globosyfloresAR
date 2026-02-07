@@ -6,10 +6,17 @@
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
+<<<<<<< HEAD
 
 <url>
   <loc>https://globos-y-floresar.netlify.app/</loc>
   <lastmod>2025-11-10T21:36:10+00:00</lastmod>
+=======
+
+<url>
+  <loc>https://globos-y-floresar.netlify.app/</loc>
+  <lastmod>2025-11-10T21:36:10+00:00</lastmod>
+>>>>>>> c75d818 (arreglando bugs visuales corrigiendo HTML cambiando api de mail a mail.js, añadiendo funcion alerta, añadiendo variables y corriguiendo JavaScript)
 </url>
 
 
