@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://globos-y-floresar.netlify.app/
